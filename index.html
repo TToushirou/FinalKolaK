@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>The Kolas | KK landing page</title>
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+        
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+          
+  <!--My CSS -->
+  <link rel="stylesheet" href="/app/assets/main.css.map">
+  <link rel="stylesheet" href="/app/assets/main.css"> 
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="header">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <img class="navbar__img" src="#" alt="Kola K Logo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="nav-links primary-navigation" id="navbar" data-visible="false" >
+          <li class="nav-links__li active"><a class="nav-links__a"  href="index.html"><span class="number">About</a>
+          <li class="nav-links__li"><a class="nav-links__a"  href="#">Services</a>
+          <li class="nav-links__li"><a class="nav-links__a"  href="./">Projects</a>
+          <li class="nav-links__li"><button><a class="nav-links__a"  href="#">Contact</a></button>
+        </ul>
+      </div>
+    </nav>
+    <section class="header__arrow">
+      <h2>We are coming soon</h2>
+      <img class="scroll" src="#" alt="Scroll down">
+    </section>
+  </section>
+  <section class="testimonials">
+    <h1 class="h1"> Client testimonials </h1>
+    <div class="testimonials__wrapper">
+      <div class="testimonials__emily">
+      <img class="testimonials--picture" src="./images/image-emily.jpg" alt="profile picture">
+      <p class="testimonials--p">We put our trust in Kola Construction and they delivered, making sure our needs were met and deadlines were always hit.</p>
+      <h3 class="testimonials--h3">Emily R.</h3>
+      <small class="testimonials--s">Front facing Dormers</small>
+      </div>
+      <div class="testimonials__emily">
+      <img class="testimonials--picture" src="./images/image-thomas.jpg" alt="profile picture">
+      <p class="testimonials--p">Kola Construction work ethic coupled with their keen interest in our home make over made it a satisfying and enjoyable experience.</p>
+      <h3 class="testimonials--h3"> Thomas S.</h3>
+      <small class="testimonials--s">Loft Conversion</small>
+      </div>
+      <div class="testimonials__emily">
+      <img class="testimonials--picture" src="./images/image-jennie.jpg" alt="profile picture">
+      <p class="testimonials--p">Incredible end result! Our home was transformed with Kola Construction. Highly recommended!</p>
+      <h3 class="testimonials--h3"> Jennie F.</h3>
+      <small class="testimonials--s">Full Refurbish</small>
+      </div>
+    </div>
+  </section>
+  <section class="imgBox"> 
+    <div class="imgBox__wrapper">
+      <img class="imgBox--1" src="./images/1of4.jpg" alt="art">
+      <img class="imgBox--1" src="./images/3of4.jpg" alt="art">
+      <img class="imgBox--1" src="./images/2of4.jpg" alt="art">
+      <img class="imgBox--1" src="./images/4of4.jpg" alt="art">
+    </div>
+  </section>
+  <section class="content">
+	    <div class="content__form">
+		    <form class="form" id="form">
+          <div class="formc">
+            <input type="text" id="firstname" placeholder="First Name">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <div class="formc">
+            <input type="text"  id="lastname" placeholder="Last Name">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <div class="formc">
+            <input type="email"  id="email" placeholder="Email Address">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <div class="formc">
+            <textarea id="message" rows="4" cols="50" placeholder="Enter your messsage" tabindex="3" aria-required="true"></textarea>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small class="message">Error Message</small>
+          </div>
+          <div class="formc">
+            <button type="submit"  id="submit">
+              Submit Contact Form
+            </button>
+          </div>
+        </form>
+        <p class="content__ts">
+        By clicking the button, you are agreeing to our <span class="ts">Terms and Services</span>
+        </p>
+      </div>
+  </section>
+
+
+  <footer class="footer">
+    <h3 class="company">Kola Construction</h3>
+    <div class="links">
+      <a>About</a>
+      <a>Services</a>
+      <a>Projects</a>
+    </div>
+    <div class="socials">
+      <img src="images/icon-facebook.svg">
+      <img src="images/icon-instagram.svg">
+      <img src="images/icon-twitter.svg">
+      <img src="images/icon-pinterest.svg">
+    </div>
+  </footer>
+<script defer type="text/javascript" src="js/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</body>
+<div class="attribution">
+  Coded by <a href="#">Tommy Taylor</a>.
+</div>
+</html>
