@@ -8,6 +8,8 @@ let message = document.getElementById('message');
 
 index.addEventListener('submit', (e)=>{
 	e.preventDefault();
+
+	checkInputs();
 	
 	let formData = {
 		firstname: firstname.value,
@@ -33,8 +35,6 @@ index.addEventListener('submit', (e)=>{
 
 	xhr.send(JSON.stringify(formData));
 
-
-	checkInputs();
 
 });
 
@@ -92,3 +92,47 @@ function isEmail(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 };
 
+// Hamburger 
+let path = document.querySelector(".path");
+
+console.log(path.getAttribute('d'))
+
+function lerp(start, end, t){
+    return start * (1 - t) + end * t;
+}
+
+let toggle = false;
+
+// Start SVG at bottom of screen
+let y = 100;
+let c = 100;
+
+
+function animate(){
+    if(toggle){
+        y = lerp(y, 0, .055);
+        c = lerp(c, 0, 0.075);
+        path.setAttribute('d', `M 0 ${y} L 0 100 100 100 100 ${y} C ${50} ${c}, ${50} ${c}, 0 ${y}` )
+    }else{
+        y = lerp(y, 100, .055)
+        c = lerp(c, 100, 0.075);
+        path.setAttribute('d', `M 0 ${y} L 0 100 100 100 100 ${y} C 50 ${c}, ${50} ${c}, 0 ${y}` )
+    }
+    
+    requestAnimationFrame(animate)
+}
+
+animate()
+
+
+let menuToggle = document.querySelector('.menu-tog');
+let ul = document.querySelector('ul');
+menuToggle.addEventListener('click', () => {
+    setTimeout(() => {
+        toggle = !toggle;
+       
+    }, 300)
+
+    
+    menuToggle.classList.toggle('active')
+})
