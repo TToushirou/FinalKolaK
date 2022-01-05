@@ -68,7 +68,6 @@ a:active {
 }
 
 @use '../util' as *;
-r
 .header {
   background-image: url("/images/temp.jpg");
   background-size: cover;
@@ -80,21 +79,18 @@ r
 }
 
 @media (min-width: 40em) {
-  r
-.header {
+  .header {
     background-image: url("/images/temp.jpg");
     min-width: 100%;
     background-size: cover;
     background-position: center;
   }
-  r
-.header .navbar-collapse {
+  .header .navbar-collapse {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  r
-.header .nav-links {
+  .header .nav-links {
     min-width: 30%;
     list-style: none;
     display: -webkit-box;
@@ -102,8 +98,7 @@ r
     display: flex;
     margin-bottom: 0;
   }
-  r
-.header .nav-links__li {
+  .header .nav-links__li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,49 +106,42 @@ r
         align-self: center;
     padding-right: 1.25rem;
   }
-  r
-.header .nav-links a {
+  .header .nav-links a {
     text-decoration: none;
     color: var(--verydarkdesaturatedblue);
     font-family: var(--font-body);
   }
-  r
-.header .nav-links button {
+  .header .nav-links button {
     padding: 0.75rem-calc 1.5rem-calc;
     background-color: white;
     border: none;
     border-radius: 6.25rem;
     cursor: pointer;
   }
-  r
-.header .nav-links button:hover {
+  .header .nav-links button:hover {
     -webkit-transition: ease-in-out 500ms;
     transition: ease-in-out 500ms;
     background-color: rgba(255, 255, 255, 0.5);
   }
 }
 
-r
 .header .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-r
 .header .primary-navigation[data-visible="true"] {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-r
 .header .navbar-toggler {
   border: 0 !important;
   z-index: 2000;
   background-position: center;
 }
 
-r
 .header .navbar-toggle-icon.open {
   background-image: url("/assets/shared/icon-close.svg") !important;
   background-repeat: no-repeat;
@@ -163,7 +151,6 @@ r
   background-position: center;
 }
 
-r
 .header__arrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,7 +164,6 @@ r
           align-items: center;
 }
 
-r
 .header__arrow h2 {
   color: var(--white);
   font-family: var(--font-header);
@@ -189,7 +175,6 @@ r
   padding-top: 3.125rem;
 }
 
-r
 .header__arrow img {
   width: 10%;
   padding-top: 2.1875rem;

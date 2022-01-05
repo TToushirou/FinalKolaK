@@ -1,6 +1,6 @@
 @use '../util' as *;
 
-r
+
 .header {
     @include breakpoint(medium) {
         background-image: url('/images/temp.jpg');
