@@ -46,13 +46,13 @@ function checkInputs(){
 	const messageValue = message.value.trim();
 
 	if(firstnameValue === '') {
-		setErrorFor(firstname, ' First name cannot be blank');
+		setErrorFor(firstname, ' Full name cannot be blank');
 	} else {
 		setSuccessFor(firstname);
 	}
 
 	if(lastnameValue === '') {
-		setErrorFor(lastname, ' Last name cannot be blank');
+		setErrorFor(lastname, ' Subject cannot be blank');
 	} else {
 		setSuccessFor(lastname);
 	}
