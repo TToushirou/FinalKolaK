@@ -14,7 +14,7 @@ var server = app.listen(3000, 'localhost', function () {
 const nodemailer = require("nodemailer");
 
 
-//middleware 
+//middleware
 app.use(express.static('public'));
 app.use(express.json())
 
