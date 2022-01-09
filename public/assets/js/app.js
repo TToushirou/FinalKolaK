@@ -1,4 +1,4 @@
-const index = document.querySelector('.form');
+const index = document.querySelector('form');
 let firstname = document.getElementById('firstname')
 let lastname = document.getElementById('lastname')
 let email = document.getElementById('email');
